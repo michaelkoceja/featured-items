@@ -1,0 +1,45 @@
+*:not(body):not(html) {
+  box-sizing:border-box;
+  /*border:1px dashed #000;*/
+}
+
+/* Main Container */
+.wrap {
+  position: relative;
+  background: lightblue;
+  margin: 2vh 2vw;
+}
+ /* Nav Bar */
+ .nav-bar h2 {
+  border: 1px solid blue;
+  float: left;
+ }
+
+.nav-bar ul {
+  border: 1px solid red;
+  float: right;
+  display: inline;
+  list-style: none;
+}
+
+/* Header */
+.header {
+  border: 1px solid green;
+  text-align: center;
+  overflow: auto;
+}
+
+/* Featured Items */
+.featured-items img {
+  height: 30vh;
+  width: 30vh;
+  display: block;
+  margin: 2vh auto;
+}
+
+/* Clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
