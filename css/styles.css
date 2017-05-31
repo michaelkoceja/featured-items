@@ -3,9 +3,13 @@
   border:1px dashed #000;
 }
 
+* {
+  margin: 0;
+}
 /* Main Container */
 .wrap {
   position: relative;
+  width: 100vw;
   background: lightblue;
   margin: 2vh 2vw;
 }
@@ -18,9 +22,10 @@
 
 .nav-bar li {
   /*border: 1px solid red;*/
-  float: right;
-  display: block;
+  display: inline;
+  float: left;
   list-style: none;
+  clear: both;
   background: lightgrey;
 }
 
@@ -31,14 +36,14 @@
   overflow: auto;
 }
 
-.header h1, h2 {
+.header h1 {
   background: lightgrey;
 }
 
 /* Featured Items */
 .featured-items img {
-  height: 30vh;
-  width: 86.5vw;
+  height: 40vh;
+  width: 100vw;
   display: block;
   /*margin: 2vh auto;*/
 }
@@ -47,14 +52,83 @@
   background: lightgrey;
 }
 
-.featured-1, .featured-2, .featured-3, .featured-4 {
-  text-align: left;
-  padding: 2vw;
-}
-
 /* Clearfix */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (min-width:700px) {
+  .nav-bar li {
+    display: inline;
+    float: right;
+    list-style: none;
+    clear: both;
+    margin-right: 2vw;
+  }
+  .nav-bar {
+    padding-left: 2vw;
+  }
+  .header {
+    padding: 0 2vw;
+  }
+  .featured-items {
+    width: 100vw;
+    padding-left: 5.5vw;
+  }
+  .featured-items img{
+    width: 43.25vw;
+    height: 30vh;
+    display: block;
+  }
+  .featured-1 {
+    float: left;
+    display: inline-block;
+    width: 43.25vw;
+  }
+  .featured-2 {
+    float: left;
+    display: inline-block;
+    width: 43.25vw;
+  }
+  .featured-3 {
+    float: left;
+    display: inline-block;
+    width: 43.25vw;
+  }
+  .featured-4 {
+    float: left;
+    display: inline-block;
+    width: 43.25vw;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .featured-items {
+    padding-left: 9vw;
+  }
+  .featured-items img {
+    width: 20vw;
+  }
+  .featured-1 {
+    float: left;
+    display: inline-block;
+    width: 20vw;
+  }
+  .featured-2 {
+    float: left;
+    display: inline-block;
+    width: 20vw;
+  }
+  .featured-3 {
+    float: left;
+    display: inline-block;
+    width: 20vw;
+  }
+  .featured-4 {
+    float: left;
+    display: inline-block;
+    width: 20vw;
+  }
 }
