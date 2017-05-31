@@ -13,13 +13,15 @@
  .nav-bar h2 {
   border: 1px solid blue;
   float: left;
+  background: lightgrey;
  }
 
 .nav-bar ul {
   border: 1px solid red;
   float: right;
-  display: inline;
+  display: block;
   list-style: none;
+  background: lightgrey;
 }
 
 /* Header */
@@ -29,12 +31,20 @@
   overflow: auto;
 }
 
+.header h1, h2 {
+  background: lightgrey;
+}
+
 /* Featured Items */
 .featured-items img {
   height: 30vh;
   width: 30vh;
   display: block;
   margin: 2vh auto;
+}
+
+.featured-1 {
+  text-align: left;
 }
 
 /* Clearfix */
